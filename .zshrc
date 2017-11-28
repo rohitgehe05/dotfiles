@@ -94,5 +94,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 DEFAULT_USER=$(whoami)
-xinput set-prop 10 278 1
 source /home/kenso/.local/bin/activate.sh
