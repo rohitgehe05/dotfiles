@@ -4,6 +4,13 @@ import os
 import re
 
 
+#path_to_token = input("Path to token: ")
+with open('{token}'.format(token=input('Path to token: ')), 'r') as f:
+    token = f.read().rsplit()[0]
+#print(token)
+#token = path_to_token
+
+
 scheme       = 'https'
 authority    = 'api.digitalocean.com'
 path         = '/v2/droplets'
@@ -12,7 +19,7 @@ endpoint     = '{scheme}://{authority}{path}'.format(scheme=scheme,             
                                                         path=path)
 
 data  = 'sata'
-token = 'smoken'
+#token = 'smoken'
 # FIXME - Format the following string
 create_droplet_command = "curl -X POST -d \'{data}\'                            \
                             -H \"Authentication: Bearer {token}\"               \

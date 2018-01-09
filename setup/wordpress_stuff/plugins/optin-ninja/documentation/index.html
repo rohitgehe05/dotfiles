@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>OptIn Ninja Documentation</title>
+  <meta name="description" content="OptIn Ninja WordPress plugin documentation by Web factory Ltd. Sold exclusively on CodeCanyon.">
+  <meta name="lang" content="en">
+  <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+  <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+</head>
+<body>
+  <div class="container">
+    <h3 class="center alt">&ldquo;OptIn Ninja&rdquo; Documentation by &ldquo;Web factory Ltd&rdquo; v2.20</h3>
+    <hr>
+    <h1 class="center">&ldquo;OptIn Ninja&rdquo; WordPress plugin</h1>
+    <div class="borderTop">
+      <div class="span-6 colborder info prepend-1">
+        <p class="prepend-top"><b>
+          Created: 2016/04/28, revision 23<br />
+          By: Web factory Ltd<br>
+          Support: <a href="http://codecanyon.net/user/WebFactory#from">only via CodeCanyon</a></b>
+        </p>
+      </div><!-- end div .span-6 -->
+      <div class="span-12 last">
+        <p class="prepend-top append-0">Thank you very much for purchasing our premium WordPress plugin. If you have any questions that are beyond the scope of this help file, please feel free to email us via our user page <a href="http://codecanyon.net/user/webfactory#from">contact form</a>. Have a good one!</p>
+      </div>
+    </div><!-- end div .borderTop -->
+  </div><!-- end div .container -->
+  <div class="container">
+    <h2 id="toc" class="alt">Table of Contents</h2>
+    <ol class="alpha">
+      <li><a href="#">Installation &amp; upgrade</a></li>
+      <li><a href="#">5sec getting started guide</a></li>
+      <li><a href="#">OptIn Pages</a></li>
+      <li><a href="#">A/B Tests</a></li>
+      <li><a href="#">Showing pages in a popup</a></li>
+      <li><a href="#">Subscribers</a></li>
+      <li><a href="#">Statistics</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Sources and Credits</a></li>
+      <li><a href="http://optin-ninja.webfactoryltd.com/" target="_blank">Online demo and examples</a></li>
+    </ol>
+  </div><!-- end div .container -->
+
+
+  <div class="container">
+<h3 class="numerate"><strong>Installation &amp; upgrade</strong> - <a href="#toc">top</a></h3>
+<p class="error">OptIn Ninja requires <b>WordPress v3.9 or higher</b> to function properly!</p>
+
+<h4>Installation</h4>
+<ol>
+<li>Download the ZIP package from CodeCanyon.</li>
+<li>Open WordPress admin and go to Plugins -&gt; Add New -&gt; Upload. Browse for the ZIP file <em>optin-ninja.zip</em> on your computer and click "Install Now".</li>
+<li>Activate the plugin.</li>
+</ol>
+
+<h4>Upgrade - method #1, it wont reset plugin's settings or delete any data</h4>
+<ol>
+<li>Do NOT deactivate the plugin.</li>
+<li>Use FTP to locate folder <i>wp-content/plugins/optin-ninja/</i></li>
+<li>Overwrite all files in that folder with new ones downloaded from CodeCanyon</li>
+</ol>
+
+<h4>Upgrade - method #2, it <b>will reset</b> plugin's settings and delete all data (pages, test, stats)</h4>
+<ol>
+<li>Deactivate and delete the plugin in your WP admin -&gt; Plugins.</li>
+<li>Use the Add New -&gt; Upload function to upload the new plugin ZIP file.</li>
+<li>Activate the plugin.</li>
+</ol>
+
+  </div><!-- end div .container -->
+
+    <div class="container">
+<h3 class="numerate"><strong>5sec getting started guide</strong> - <a href="#toc">top</a></h3>
+
+<p class="success">Inline help is available throughout the plugin. Please use it!</p>
+
+<p>Install and activate the plugin. Demo data will be imported automatically. There are two pages, an A/B test, couple of subscribers and some dummy stats. If you're using the plugin for the first time be sure to check out all that data because it will help you understand how things work far better than any manual. If you've already used the plugin then feel free to delete everything (stats and subscribers can be deleted in the Settings screen).</p>
+
+<p>Easiest way to create a new Page is to simply click "Add New Optin Page", give it a name and click "Publish". Default settings will take care of everything. After viewing the page you can change settings you don't like.</p>
+
+<p>Please read the info pointer we placed throughout the plugin. Once you dismiss them you can't get them back.</p>
+
+<p>If you want to use 3rd party autoresponders you have to configure them in Settings screen.</p>
+
+  </div><!-- end div .container -->
+
+
+<div class="container">
+  <h3 class="numerate"><strong>OptIn Pages</strong> - <a href="#toc">top</a></h3>
+
+<p>OptIn Pages behave just like posts or pages in WordPress. The way you add, edit or delete them is the same. Main screen that shows all Pages also displays stats so that you don't have to view them in the Statistics screen.</p>
+
+<p>Configuration for any page consists of 5 boxes that hold general settings, background settings, settings for box #1 and box #2 and autoresponder settings. Each setting is documented in the plugin itself and predefined values are set so that they work for most use cases.</p>
+
+<p>Plugin uses the "two boxes" approach to make the conversions as high as possible. Both boxes can hold and content you like, from text and images, to videos and tables. Content for boxes is the same as content for any post/page. Please note that not all shortcodes will work in them.</p>
+
+    </div><!-- end div .container -->
+
+
+<div class="container">
+  <h3 class="numerate"><strong>A/B Tests</strong> - <a href="#toc">top</a></h3>
+
+<p>A/B Tests allow you to choose which OptIn Page is best to use. For example you can't decide if using a red or orange button performs best. Not a problem. Create your OptIn page with the red button, then clone it and in the new page just change the button color to orange. Assign both pages to a new A/B test and get some visitors to that URL. The system will randomly show page A or page B to visitors and in a couple of days you'll see which one has more subscribers - that one is obviously better.</p>
+
+<p>Random Pages within an A/B Test are assigned to users on a per-session basis meaning that once a user is shown a certain page he will see it as long as his session is alive. If he hits reload a couple of times he'll see the same page, but if he comes back, lets say tomorrow, he might see another, randomly assigned, page.</p>
+
+<p>URLs assigned to A/B test will override any other URLs on your WP site. If you set the URL to "/example/" and there is a WP page or post with that URL the A/B test will be shown. Same goes for OptIn Pages. Feel free to override URLs, it's not a problem just make sure you understand what's going on. You can also use an A/B test as your site's homepage. Just give it a "/" URL.</p>
+
+    </div><!-- end div .container -->
+
+<div class="container">
+  <h3 class="numerate"><strong>Showing pages in a popup</strong> - <a href="#toc">top</a></h3>
+
+<p>Any OptIn Page or OptIn A/B test can be shown in a popup / lightbox. An existing link can be converted to open the popup by adding the "optin-popup" class to it. For instance: &lt;a href="/optin-pages/sample-page/" class="optin-popup"&gt;click here&lt;/a&gt;</p>
+
+<p>You can also use the provided shortcodes. There are two, one for pages and other for A/B tests. You can copy/paste the shortcodes displayed on OptIn editing screens and on the A/B tests list screen. Sample shortcodes:<br>
+<i>[optin-popup id="popup ID" class="optional-additional-class" position="center"]click here[/optin-popup]</i><br>
+<i>[optin-test-popup id="test ID" class="optional-additional-class" position="center"]click here[/optin-test-popup]</i>
+</p>
+
+<p>Third option is to use a JS function - <i>wf_optin_open_popup('/optins-url/')</i>. It's a global function that can be used in any JS code as long as you have popups enabled in Ninja's options.</p>
+
+
+    </div><!-- end div .container -->
+
+  <div class="container">
+  <h3 class="numerate"><strong>Subscribers</strong> - <a href="#toc">top</a></h3>
+
+<p>Depending on your global and per-page autoresponder settings subscribers will be saved to a local database. Each OptIn Page is a list, so an email has to be unique per-list, or in other words - a user can subscribe to multiple lists/pages.<br>
+Subscribers can be sorted and searched, as well as exported to CSV, Excel and PDF. If you want to delete them you can do so in Settings.<br>
+We suggest always saving subscribers to a local database - it's a nice backup in case you lose the account on the 3rd party service.</p>
+
+    </div><!-- end div .container -->
+
+
+  <div class="container">
+  <h3 class="numerate"><strong>Statistics</strong> - <a href="#toc">top</a></h3>
+
+<p>Graphical representation of statistical data is available for pages and for test.<br>
+For pages it shows unique views, unique views for second content box and conversions (subscribers). Below the graph you can see the sum for all numbers. Only one page stats can be viewed at a time.<br>
+Test graph shows data for all pages included in that test. You can choose the data shown on the graph - views, second box views and/or conversion. Table below the graph lists all data in sums.</p>
+
+<p>Please note that all visits are unique on a per-session level. Meaning one visit (or page #2 view) is measured for each user until his session is alive. If he refreshes the page 5 times it's still 1 view. If he comes back tomorrow then we do count that as an additional view.</p>
+
+    </div><!-- end div .container -->
+
+  <div class="container">
+  <h3 class="numerate"><strong>Settings</strong> - <a href="#toc">top</a></h3>
+
+<p>Importing background textures and images can take a while. So please be patient and make sure you have enough free space on your hosting account. If importing fails download the ZIP files and import only images that you like.</p>
+
+<p>3rd party autoresponder services must be configured before they can be used. Configuration is detailed on each of the autoresponder's tab in Settings. Please remember to create at least one list on your 3rd party service.</p>
+
+    </div><!-- end div .container -->
+
+
+  <div class="container">
+    <h3 class="numerate"><strong>FAQ</strong> - <a href="#toc">top</a></h3>
+
+<h4>Can I use 3rd party plugins / shortcodes on OptIn Pages?</h4>
+<p>Short answer - no you can't. A bit longer - shortcodes are parsed but any 3rd party CSS/JS files will not be included in the page unless you add them manually.</p>
+
+<h4>Will this work with any theme?</h4>
+<p>Yes, it's completely theme independant.</p>
+
+<h4>Will having many pages slow my site down?</h4>
+<p>Now, it's the same as having many posts. They are just stored in the database.</p>
+
+<h4>Can I export locally stored subscribers?</h4>
+<p>Sure, the export button is above the subscribers table, on the right hand side.</p>
+
+
+  </div><!-- end div .container -->
+  <div class="container">
+    <h3 class="numerate"><strong>Sources and Credits</strong> - <a href="#toc">top</a></h3>
+    <p>OptIn Ninja uses the following external assets:</p>
+    <ul>
+    <li>DataTables<br>
+      SpryMedia<br>
+      www.datatables.net<br>
+      GPL v2</li>
+    <li>
+      Flot<br>
+      Ole Laursen<br>
+      www.flotcharts.org<br>
+      Public domain
+    </li>
+    <li>
+      FitVids<br>
+      Chris Coyier and Paravel<br>
+      http://fitvidsjs.com/<br>
+      WTFPL license
+    </li>
+    <li>
+      Supersized<br>
+      Sam Dunn<br>
+      www.buildinternet.com/project/supersized/<br>
+      MIT
+    </li>
+    <li>
+      WordPress Importer<br>
+      WP.org<br>
+      www.wordpress.org/plugins/wordpress-importer/<br>
+      GPL v2
+    </li>
+    <li>
+      Various images<br>
+      various authors<br>
+      www.subtlepatterns.com<br>
+      CC
+    </li>
+    <li>
+      Various images<br>
+      various authors<br>
+      www.unsplash.com<br>
+      Free
+    </li>
+    </ul>
+
+  </div><!-- end div .container -->
+    <div class="container">
+    <p>Once again, <strong>thank you</strong> so much for purchasing this premium WordPress plugin. As stated at the beginning, we'd be glad to help you if you have any questions relating to this plugin. We'll do our best to assist. If you have a more general question related to plugins on CodeCanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p><br>
+    <div id="footer_logos"><a href="http://www.webfactoryltd.com/"><img class="footer-logo" src="assets/images/webfactory_logo.png" alt="Web Factory Ltd." /></a><a href="http://codecanyon.net/"><img class="footer-logo" src="assets/images/codecanyon_logo.png" alt="CodeCanyon" /></a></div>
+    <p class="footer-totop"><a href="#toc">Go To Table of Contents</a></p>
+   </div><!-- end div .container -->
+     <script type="text/javascript" src="assets/js/jquery.js"></script>
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $('h3.numerate').each(function(i, element){
+           $('strong', element).prepend(String.fromCharCode(65 + i) + ') ');
+           $(element).attr('id', 'section-' + (i+1));
+         });
+
+         $('ol.alpha li').each(function(i, element){
+           if ($('a', element).attr('href') == '#' || $('a', element).attr('href') == '') {
+            $('a', element).attr('href', '#section-' + (i+1));
+           }
+         });
+       });
+  </script>
+</body>
+</html>
