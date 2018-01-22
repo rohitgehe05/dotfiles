@@ -56,6 +56,7 @@ def builder():
 def get_host(droplet_id, writeout_file):
     pa_token = open('/home/kenso/.pat/.digitalocean').read() # FIXME redundant
     writeout_file_i = writeout_file.split('.')[0]     \
+                        + '.'                         \
                         + writeout_file.split('.')[1] \
                         + '-'                         \
                         + str(droplet_id)             \

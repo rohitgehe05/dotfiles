@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 
-add-apt-repository ppa:certbot/certbot
+sh -c 'echo "set const" >> .nanorc'
 
-apt-get update
+sh -c 'echo "set tabsize 4" >> .nanorc'
 
-apt-get -y install fail2ban firewalld nginx ntp tree python-certbot-nginx python3.6 python3-pip python3-dev ipython3 ipython3-notebook
+sh -c 'echo "set tabstospaces" >> .nanorc'
 
-pip3 install --upgrade pip # FIXME
+adduser --disabled-password --gecos "" kensotrabing
 
-pip3 install jupyter matplotlib numpy pandas 
+usermod -aG sudo kensotrabing
 
-exit
+cp .nanorc /home/kensotrabing/
+
+mkdir -p /etc/ssh/kensotrabing
