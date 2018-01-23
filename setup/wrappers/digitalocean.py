@@ -14,7 +14,7 @@ import requests
 def builder():
     endpoint = 'https://api.digitalocean.com/v2/droplets'
     # hostname = input('hostname: ') # FIXME Parameter hard-coded to expedite testing.
-    hostname = 'node'                # FIXME Parameter hard-coded to expedite testing.
+    hostname = 'amit'                # FIXME Parameter hard-coded to expedite testing.
     payload = {}
     # pat_path = input('pat_path: ')            # FIXME Parameter hard-coded to expedite testing.
     pat_path = '/home/kenso/.pat/.digitalocean' # FIXME Parameter hard-coded to expedite testing.
@@ -56,7 +56,6 @@ def builder():
 def get_host(droplet_id, writeout_file):
     pa_token = open('/home/kenso/.pat/.digitalocean').read() # FIXME redundant
     writeout_file_i = writeout_file.split('.')[0]     \
-                        + '.'                         \
                         + writeout_file.split('.')[1] \
                         + '-'                         \
                         + str(droplet_id)             \
