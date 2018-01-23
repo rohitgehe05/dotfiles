@@ -17,7 +17,8 @@ def spin_up():
     aws_lightsail = ['awsl', 'aws lightsail']
     digital_ocean = ['do', 'digital ocean']
     iaas_platform = aws_lightsail + digital_ocean
-    vendor_choice = 'do' # FIXME Parameter hard-coded to expedite testing.
+    # vendor_choice = input('vendor_choice: ') # FIXME Parameter hard-coded to expedite testing.
+    vendor_choice = 'do'                       # FIXME Parameter hard-coded to expedite testing.
     if vendor_choice in iaas_platform:
         if vendor_choice in aws_lightsail:
             pass # TODO 1
