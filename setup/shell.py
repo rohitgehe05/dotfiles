@@ -26,7 +26,7 @@ def spin_up():
             os.system('{unix_command} > {writeout_file}'             \
                         .format(unix_command=digitalocean.builder(), \
                                 writeout_file=writeout_file))
-            time.sleep(60) # Note: waiting for droplets to spin-up so IP addresses are provisioned
+            time.sleep(60)
             return harden(writeout_file)
     else:
         pass # TODO 2
@@ -34,7 +34,7 @@ def spin_up():
 def harden(writeout_file):
     response = json.load(open(writeout_file))
     payloads = []
-    if 'droplets' in response: # TODO write logic to control for a single droplet
+    if 'droplets' in response:
         payloads = response['droplets']
     else:
         payloads = [response['droplet']]
