@@ -47,6 +47,7 @@ def harden(writeout_file):
         os.system('sh -c \'echo "kensotrabing:swordfish" > /home/kenso/dotfiles/setup/.credentials\'')
         os.system('scp /home/kenso/dotfiles/setup/.credentials root@{ip_address}:/home/kensotrabing/'.format(ip_address=ip_address))
         os.system('ssh -o "StrictHostKeyChecking no" root@{ip_address} \'bash -s\' < procedures/remote1.sh'.format(ip_address=ip_address))
+    os.system('rm /home/kenso/dotfiles/setup/.credentials')
     return ip_addresses
 
 if __name__ == '__main__':

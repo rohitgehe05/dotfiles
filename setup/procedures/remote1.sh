@@ -282,7 +282,7 @@ sh -c 'echo "maxretry = 3" >> /etc/fail2ban/jail.local'
 
 sh -c 'echo "destemail = kenso.trabing@outlook.com" >> /etc/fail2ban/jail.local'
 
-sh -c 'echo "sendername = security@wordpress" >> /etc/fail2ban/jail.local'
+sh -c 'echo "sendername = security@digitalocean" >> /etc/fail2ban/jail.local'
 
 sh -c 'echo "banaction = iptables-multiport" >> /etc/fail2ban/jail.local'
 
