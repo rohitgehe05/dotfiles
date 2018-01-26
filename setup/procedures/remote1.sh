@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-### 
+###
 ### Installation
 ###
 
@@ -12,19 +12,19 @@ apt-get -y install fail2ban firewalld nginx ntp tree python3 python3-pip python-
 
 pip3 install --upgrade pip
 
-pip3 install jupyter matplotlib numpy pandas 
+pip3 install jupyter matplotlib numpy pandas
 
-### 
+###
 ### Configuration
 ###
 
-chown -R kensotrabing:kensotrabing /etc/ssh/kensotrabing
+chown -R rohitgehe05:rohitgehe05 /etc/ssh/rohitgehe05
 
-chmod 755 /etc/ssh/kensotrabing
+chmod 755 /etc/ssh/rohitgehe05
 
-chmod 644 /etc/ssh/kensotrabing/authorized_keys
+chmod 644 /etc/ssh/rohitgehe05/authorized_keys
 
-sed -i -e '/^#AuthorizedKeysFile/s/^.*$/AuthorizedKeysFile \/etc\/ssh\/kensotrabing\/authorized_keys/' /etc/ssh/sshd_config
+sed -i -e '/^#AuthorizedKeysFile/s/^.*$/AuthorizedKeysFile \/etc\/ssh\/rohitgehe05\/authorized_keys/' /etc/ssh/sshd_config
 
 sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config
 
@@ -34,7 +34,7 @@ sh -c 'echo "" >> /etc/ssh/sshd_config'
 
 sh -c 'echo "" >> /etc/ssh/sshd_config'
 
-sh -c 'echo "AllowUsers kensotrabing" >> /etc/ssh/sshd_config'
+sh -c 'echo "AllowUsers rohitgehe05" >> /etc/ssh/sshd_config'
 
 systemctl reload sshd
 
@@ -280,7 +280,7 @@ sh -c 'echo "findtime = 1200" >> /etc/fail2ban/jail.local'
 
 sh -c 'echo "maxretry = 3" >> /etc/fail2ban/jail.local'
 
-sh -c 'echo "destemail = kenso.trabing@outlook.com" >> /etc/fail2ban/jail.local'
+sh -c 'echo "destemail = g@koinrex.com" >> /etc/fail2ban/jail.local'
 
 sh -c 'echo "sendername = security@digitalocean" >> /etc/fail2ban/jail.local'
 
@@ -312,6 +312,6 @@ sh -c 'echo "enabled = true" >> /etc/fail2ban/jail.local'
 
 systemctl restart fail2ban
 
-cat /home/kensotrabing/.credentials | chpasswd
+cat /home/rohitgehe05/.credentials | chpasswd
 
-rm /home/kensotrabing/.credentials
+rm /home/rohitgehe05/.credentials
