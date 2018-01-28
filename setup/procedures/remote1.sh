@@ -312,6 +312,20 @@ sh -c 'echo "enabled = true" >> /etc/fail2ban/jail.local'
 
 systemctl restart fail2ban
 
+cd /tmp
+
+wget https://www.multichain.com/download/multichain-1.0.2.tar.gz
+
+tar -xvzf multichain-1.0.2.tar.gz
+
+cd multichain-1.0.2
+
+mv multichaind multichain-cli multichain-util /usr/local/bin
+
+cd ..
+
+rm -rf multichain-1.0.2/
+
 cat /home/rohitgehe05/.credentials | chpasswd
 
 rm /home/rohitgehe05/.credentials
